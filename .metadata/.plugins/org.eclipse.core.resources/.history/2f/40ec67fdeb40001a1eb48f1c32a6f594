@@ -1,0 +1,17 @@
+package com.acc_cucumber_demo3;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		features = "Feature99"
+		,glue= {"step_definition99"}
+		,tags= {"@SmokeTest"}
+		)
+
+public class Testrunner {
+
+}

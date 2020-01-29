@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="Testrunner (2)" project="com.maven_29_jan_demo23" tests="2" started="2" failures="0" errors="2" ignored="0">
+  <testsuite name="com.acc_cucumber_login.Testrunner" time="34.547">
+    <testsuite name="Feature: Login Action" time="34.547">
+      <testcase name="Successful Login with Valid Credentials" classname="Login Action" time="15.671">
+        <error>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='username']"}
+  (Session info: chrome=79.0.3945.130)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DDC4B-D-GZSQ6C2', ip: '172.21.116.97', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162-ea'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 79.0.3945.130, chrome: {chromedriverVersion: 79.0.3945.36 (3582db32b3389..., userDataDir: C:\Users\TRAINI~1.02\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:52078}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 7bf8977bc16e7ab4db28361390f9b08e
+*** Element info: {Using=name, value=username}&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:322)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:400)&#13;
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)&#13;
+	at step_definition29.Test_steps29.user_enters_and(Test_steps29.java:35)&#13;
+	at ✽.User enters "lalitha" and "password123"(Feature/Login.feature:6)&#13;
+&#13;
+</error>
+      </testcase>
+      <testcase name="Successful Login with Valid Credentials" classname="Login Action" time="18.873">
+        <error>org.openqa.selenium.SessionNotCreatedException: session not created
+from chrome not reachable
+  (Session info: chrome=79.0.3945.130)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DDC4B-D-GZSQ6C2', ip: '172.21.116.97', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_162-ea'
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x0069A113+1548563]
+	Ordinal0 [0x0061DDA1+1039777]
+	Ordinal0 [0x0059E32E+516910]
+	Ordinal0 [0x00598012+491538]
+	Ordinal0 [0x005986EB+493291]
+	Ordinal0 [0x00599855+497749]
+	Ordinal0 [0x00595885+481413]
+	Ordinal0 [0x0059F0D0+520400]
+	Ordinal0 [0x0054C030+180272]
+	Ordinal0 [0x0054B59D+177565]
+	Ordinal0 [0x005495FB+169467]
+	Ordinal0 [0x0053160A+71178]
+	Ordinal0 [0x00532690+75408]
+	Ordinal0 [0x00532629+75305]
+	Ordinal0 [0x006371B7+1143223]
+	GetHandleVerifier [0x00732B46+507814]
+	GetHandleVerifier [0x00732864+507076]
+	GetHandleVerifier [0x00739F47+537511]
+	GetHandleVerifier [0x00733402+510050]
+	Ordinal0 [0x0062F29C+1110684]
+	Ordinal0 [0x0063938B+1151883]
+	Ordinal0 [0x006394F3+1152243]
+	Ordinal0 [0x006383F5+1147893]
+	BaseThreadInitThunk [0x76F36359+25]
+	RtlGetAppContainerNamedObjectPath [0x77B67B74+228]
+	RtlGetAppContainerNamedObjectPath [0x77B67B44+180]
+&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)&#13;
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)&#13;
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)&#13;
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)&#13;
+	at java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)&#13;
+	at java.util.Spliterators$ArraySpliterator.tryAdvance(Unknown Source)&#13;
+	at java.util.stream.ReferencePipeline.forEachWithCancel(Unknown Source)&#13;
+	at java.util.stream.AbstractPipeline.copyIntoWithCancel(Unknown Source)&#13;
+	at java.util.stream.AbstractPipeline.copyInto(Unknown Source)&#13;
+	at java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)&#13;
+	at java.util.stream.FindOps$FindOp.evaluateSequential(Unknown Source)&#13;
+	at java.util.stream.AbstractPipeline.evaluate(Unknown Source)&#13;
+	at java.util.stream.ReferencePipeline.findFirst(Unknown Source)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)&#13;
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)&#13;
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)&#13;
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)&#13;
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)&#13;
+	at step_definition29.Test_steps29.user_is_on_Home_Page(Test_steps29.java:21)&#13;
+	at ✽.User is on Home Page(Feature/Login.feature:4)&#13;
+&#13;
+</error>
+      </testcase>
+    </testsuite>
+  </testsuite>
+</testrun>
